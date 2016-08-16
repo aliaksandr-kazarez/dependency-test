@@ -3,6 +3,6 @@
  */
 console.warn("SECRET@1: Hello, I'm secret@1");
 
-module.exports = function() {
+export default function f() {
     console.log("SECRET@1: default export");
 };

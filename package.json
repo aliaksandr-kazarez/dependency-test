@@ -18,14 +18,20 @@
   },
   "devDependencies": {
     "jspm": "^0.16.42",
-    "webpack": "^1.13.1"
+    "webpack": "^2.1.0-beta.20"
   },
   "jspm": {
     "dependencies": {
       "@dependencies-test/foo": "npm:@dependencies-test/foo@1.0.0",
       "@dependencies-test/secret": "npm:@dependencies-test/secret@2.0.0",
-      "@dependencies-test/test": "npm:@dependencies-test/test@1.0.0"
+      "@dependencies-test/test": "npm:@dependencies-test/test@1.0.0",
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.13"
     },
-    "devDependencies": {}
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4",
+      "plugin-babel-runtime": "npm:babel-runtime@^5.8.24"
+    }
   }
 }

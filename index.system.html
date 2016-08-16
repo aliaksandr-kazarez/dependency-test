@@ -12,12 +12,19 @@
 <script>
     System.config({
         "baseURL": "./",
+        "transpiler": "plugin-babel",
         "defaultExtension": "js",
         "packageConfigPaths": [
             "/node_modules/**/package.json",
             "/node_modules/@dependencies-test/**/package.json"
         ],
+        map: {
+            "plugin-babel": "npm:systemjs-plugin-babel@0.0.13/plugin-babel.js",
+            "systemjs-babel-build": "npm:systemjs-plugin-babel@0.0.13/systemjs-babel-browser.js"
+        },
         "paths": {
+            "github:*": "jspm_packages/github/*",
+            "npm:*": "jspm_packages/npm/*",
             "@dependencies-test/*": "./node_modules/@dependencies-test/*",
             "*": "./node_modules/*"
         }

@@ -14,4 +14,4 @@ cd ${current_path}
 npm install
 npm run webpack
 #npm run jspm -- cc
-npm run jspm -- install
+npm run jspm -- install -y
