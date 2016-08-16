@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SystemJS dependency resolution test</title>
+</head>
+<body>
+
+<script src="./node_modules/systemjs/dist/system.js"></script>
+
+
+<script>
+    System.config({
+        "baseURL": "./",
+        "defaultExtension": "js",
+        "packageConfigPaths": [
+            "/node_modules/**/package.json",
+            "/node_modules/@dependencies-test/**/package.json"
+        ],
+        "paths": {
+            "@dependencies-test/*": "./node_modules/@dependencies-test/*",
+            "*": "./node_modules/*"
+        }
+    });
+
+    System.import("./main.js");
+</script>
+</body>
+</html>
