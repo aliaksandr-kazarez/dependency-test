@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
+  "format": "es6",
   "publishConfig": {
     "registry": "http://localhost:4873/"
   },
