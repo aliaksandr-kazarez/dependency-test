@@ -11,7 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "systemjs": "^0.19.36",
     "@dependencies-test/test": "1",
     "@dependencies-test/secret": "2",
     "@dependencies-test/foo": "1"
@@ -24,7 +23,8 @@
     "dependencies": {
       "@dependencies-test/foo": "npm:@dependencies-test/foo@1.0.0",
       "@dependencies-test/secret": "npm:@dependencies-test/secret@2.0.0",
-      "@dependencies-test/test": "npm:@dependencies-test/test@1.0.0"
+      "@dependencies-test/test": "npm:@dependencies-test/test@1.0.0",
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.13"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
